@@ -46,7 +46,7 @@ foodElement.innerHTML = favFoods.join(", ");
 
 const newFavoriteFood = "Ice Cream";
 
-favFoods.push(newFavoriteFood);
+favFoods.push(newFavoriteFood); 
 
 foodElement.innerHTML += `<br>${favFoods.join(", ")}`;
 
