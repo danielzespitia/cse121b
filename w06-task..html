@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W06: Final Project Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    #gridly {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #gridly button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="w06-task.html" class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>W06: Final Project Application</h1>
+    <h2>Generate Password</h2>
+    <button onclick="generatePassword()">Generate Password</button>
+    <input type="text" id="passwordInput">
+  </main>
+  <footer>
+    &copy;<span id="year"></span> | CSE 121b | W06: Final Project Application
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="scripts/w06-task.js"></script>
+</body>
+
+</html>
